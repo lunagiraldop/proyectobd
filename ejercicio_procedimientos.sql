@@ -128,7 +128,7 @@ BEGIN
   SET id_inscripcion = a_id_inscripcion,
       nota = a_nota,
       fecha_evaluacion = a_fecha_evaluacion
-  WHERE id = a_id_calificacion;
+  WHERE id_calificacion = a_id_calificacion;
 END $$
 
 -- 5. Procedimiento para eliminar la inscripción de un estudiante en un curso
@@ -140,3 +140,8 @@ END $$
 
 DELIMITER $$
 
+-- CALL inscribir_estudiante(10, 9, '2025-10-03');
+-- CALL calcular_promedio(3);
+-- CALL listar_cursos(5);
+-- CALL actualizar_calificacion(4, 4, 80.00, '2025-03-04');
+-- CALL eliminar_estudiante_curso(9);
